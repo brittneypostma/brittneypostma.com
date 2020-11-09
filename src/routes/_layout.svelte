@@ -1,7 +1,6 @@
 <script>
   import Header from '../components/Header.svelte'
   import Footer from '../components/Footer.svelte'
-  import Bubble from '../components/Bubble.svelte'
 </script>
 
 <style>
@@ -10,6 +9,24 @@
     bottom: 0;
     right: 0;
     z-index: -2;
+  }
+
+  .bubble {
+    z-index: 10;
+    position: relative;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    background: var(--light-blue);
+    background: radial-gradient(
+      100% 100% at 50% 0%,
+      var(--light-blue) 0%,
+      #bcf5ff 100%
+    );
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   }
 
   .container {
@@ -55,37 +72,32 @@
 <Header />
 <main>
   <div class="container">
-    <div>
-      <Bubble href="bdesigned.dev">
-        <img src="assets/logo.png" alt="bDesigned logo" class="logos" />
-        <h2 class="title">bDesigned</h2>
-        <p class="text">
-          Brittney runs her own freelance business, bDesigned. See some of her
-          projects or contact her about work.
-        </p>
-      </Bubble>
-    </div>
-    <div class="logs">
-      <Bubble href="theconsolelogs.com">
-        <img src="assets/logs.png" alt="The Console Logs logo" class="logos" />
-        <h2 class="title">The Console Logs</h2>
-        <p class="text">
-          Brittney writes notes on a number of development topics at The Console
-          Logs. Read up on topics from html to advanced javascript and react.
-        </p>
-      </Bubble>
-    </div>
-    <div class="ztm">
-      <Bubble
-        href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1">
-        <img src="assets/ztm.png" alt="The Console Logs logo" class="logos" />
-        <h2 class="title">ZTM Academy</h2>
-        <p class="text">
-          Brittney is an insructor over at the ZTM Academy. Watch her workshop
-          on Responsive Web Design.
-        </p>
-      </Bubble>
-    </div>
+    <a href="https://www.bdesigned.dev" class="bubble">
+      <img src="assets/logo.png" alt="bDesigned logo" class="logos" />
+      <h2 class="title">bDesigned</h2>
+      <p class="text">
+        Brittney runs her own freelance business, bDesigned. See some of her
+        projects or contact her about work.
+      </p>
+    </a>
+    <a href="https://www.theconsolelogs.com" class="logs bubble">
+      <img src="assets/logs.png" alt="The Console Logs logo" class="logos" />
+      <h2 class="title">The Console Logs</h2>
+      <p class="text">
+        Brittney writes notes on a number of development topics at The Console
+        Logs. Read up on topics from html to advanced javascript and react.
+      </p>
+    </a>
+    <a
+      href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
+      class="ztm bubble">
+      <img src="assets/ztm.png" alt="ZTM Academy" class="logos" />
+      <h2 class="title">ZTM Academy</h2>
+      <p class="text">
+        Brittney is an insructor over at the ZTM Academy. Watch her workshop on
+        Responsive Web Design.
+      </p>
+    </a>
   </div>
 
   <div class="beach">
