@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "brittneypostma",
+  "description": "Landing Page for Brittney Postma, owner of bDesigned, The Console Logs, and instructor at the ZTM Academy.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
