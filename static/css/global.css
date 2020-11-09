@@ -1,0 +1,82 @@
+@font-face{
+  font-family: 'Quicksand';
+  src: url('/fonts/quicksand.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'Pacifico';
+  src: url('/fonts/pacifico.woff2') format('woff2');
+}
+
+:root {
+  --white: #fff;
+  --mint: #AEEADE;
+  --light-blue: #bee0df;
+  --dark-blue: #465881;
+  --royal-blue: #307ba7; 
+  --mint: #AEEADE;
+  --caribbean: #00E0FF;
+  --blue: #5FC7E4;
+  --light-teal: #68D2C8;
+  --teal: #036c8b;
+  --yellow: #E5A91E;
+  --navy: #1B2A49;
+  --gray: #333333;
+  --green: #4b9139;
+
+  --bg: var(--black);
+  --text: var(--caribbean);
+
+  --shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-outline: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+body {
+  background: var(--blue);
+  color: var(--navy);
+  background: linear-gradient(126.53deg, #036D9E -9.6%, #036E9F -4.44%, #0571A1 0.72%, #0775A5 5.88%, #097CAA 11.05%, #0D85B1 16.21%, #1290BA 21.37%, #169BC3 26.53%, #1CA7CD 31.7%, #20B2D6 36.86%, #25BDDF 42.02%, #29C6E6 47.18%, #2BCDEB 52.35%, #2DD1EF 57.51%, #2FD4F1 62.67%, #2FD5F2 67.83%);
+}
+
+main {
+  height: calc(100vh - 83px);
+  width: 100vw;
+  overflow: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  font-family: Quicksand, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--teal);
+  font-family: Pacifico, sans-serif;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: clamp(1.75rem, 2rem + 1vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2rem);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

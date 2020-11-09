@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brittney Postma</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#00E0FF" />
+    <meta name="msapplication-TileColor" content="#00E0FF" />
+    <meta name="title" content="bDesigned" />
+    <meta
+      name="description"
+      content="Landing page for Brittney Postma, owner and designer of bDesigned."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/b.Designed11/" />
+    <meta property="og:title" content="bDesigned" />
+    <meta
+      property="og:description"
+      content="Landing page for Brittney Postma, owner and designer of bDesigned."
+    />
+    <meta property="og:image" content="https://www.bDesigned.dev/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://twitter.com/BrittneyPostma" />
+    <meta property="twitter:title" content="bDesigned" />
+    <meta
+      property="twitter:description"
+      content="Landing page for Brittney Postma, owner and designer of bDesigned."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.bDesigned.dev/logo.png"
+    />
+    <meta name="twitter:image:alt" content="bDesigned Logo" />
+
+    %sapper.base%
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/remedy.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+
+    <!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+    %sapper.scripts%
+
+    <!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+    %sapper.styles%
+
+    <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+    %sapper.head%
+  </head>
+  <body>
+    <!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+    <div id="sapper">%sapper.html%</div>
+  </body>
+</html>
