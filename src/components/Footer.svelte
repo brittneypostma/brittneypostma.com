@@ -9,7 +9,7 @@
   }
 </style>
 
-<footer>
+<footer transition:fade={{ duration: 5000 }}>
   <a
     aria-label="opens bDesigned facebook page in new tab"
     href="https://www.facebook.com/b.Designed11/"

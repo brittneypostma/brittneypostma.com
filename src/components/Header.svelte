@@ -7,4 +7,6 @@
   }
 </style>
 
-<header><img src="assets/brittney.svg" alt="brittney postma" /></header>
+<header>
+  <img src="assets/brittney.svg" alt="brittney postma" role="heading" />
+</header>
