@@ -12,6 +12,7 @@
 
 <style>
   .beach {
+    filter: drop-shadow(-4px -8px 8px rgba(3, 3, 3, 0.25));
     position: fixed;
     bottom: 0;
     right: 0;
