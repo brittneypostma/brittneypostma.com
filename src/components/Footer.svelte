@@ -6,10 +6,11 @@
     justify-content: end;
     position: absolute;
     top: 25%;
+    right: 1rem;
   }
 </style>
 
-<footer transition:fade={{ duration: 5000 }}>
+<footer>
   <a
     aria-label="opens bDesigned facebook page in new tab"
     href="https://www.facebook.com/b.Designed11/"
