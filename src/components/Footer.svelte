@@ -1,5 +1,6 @@
 <style>
   footer {
+    z-index: 1;
     display: grid;
     gap: 1rem;
     width: 100%;
@@ -7,6 +8,31 @@
     position: absolute;
     top: 25%;
     right: 1rem;
+  }
+  img:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    10%,
+    30% {
+      transform: rotate(-20deg);
+    }
+    50%,
+    70%,
+    90% {
+      transform: rotate(-10deg);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: rotate(10deg);
+    }
   }
 </style>
 

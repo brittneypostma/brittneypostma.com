@@ -41,7 +41,9 @@
   --shadow-outline: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-body {
+body {  
+  scrollbar-color: var(--caribbean) var(--navy);
+  scrollbar-width: thin;
   background: var(--blue);
   color: var(--navy);
   background: linear-gradient(
@@ -104,4 +106,29 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #494d4e;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+      rgb(10, 199, 233) 0%,
+      rgb(29, 66, 90) 75%,
+      rgb(13, 29, 36) 100%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #295a81;
 }

@@ -4,6 +4,7 @@
   import { quintOut } from 'svelte/easing'
   import Header from '../components/Header.svelte'
   import Footer from '../components/Footer.svelte'
+  import Wallpaper from '../components/Wallpaper.svelte'
 
   let ready = false
 
@@ -20,6 +21,7 @@
   }
 
   .bubble {
+    background: rgb(255 255 255 / 0.7);
     z-index: 10;
     position: relative;
     display: grid;
@@ -28,13 +30,22 @@
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    background: var(--light-blue);
-    background: radial-gradient(
-      100% 100% at 50% 0%,
-      var(--light-blue) 0%,
-      #bcf5ff 100%
-    );
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    transition: all 400ms cubic-bezier(0.47, 2.64, 0.41, 0.8);
+  }
+
+  .bubble:hover {
+    transform: scale(1.1);
   }
 
   .container {
@@ -75,16 +86,23 @@
       grid-area: 3/3/-1/-1;
     }
   }
+
+  @media (min-width: 1024px) {
+    .bubble {
+      background: rgb(255 255 255 / 0.1);
+    }
+  }
 </style>
 
 <Header />
+<Wallpaper />
 <main>
   {#if ready}
     <div class="container">
       <a
         href="https://www.bdesigned.dev"
         class="bubble"
-        transition:fly={{ duration: 1000, delay: 100, easing: quintOut, y: -150 }}>
+        transition:fly={{ duration: 1000, delay: 100, easing: quintOut, y: 150 }}>
         <img src="assets/logo.png" alt="bDesigned logo" class="logos" />
         <h2 class="title">bDesigned</h2>
         <p class="text">
@@ -95,7 +113,7 @@
       <a
         href="https://www.theconsolelogs.com"
         class="logs bubble"
-        transition:fly={{ duration: 1000, delay: 400, easing: quintOut, y: -150 }}>
+        transition:fly={{ duration: 1000, delay: 400, easing: quintOut, y: 150 }}>
         <img src="assets/logs.png" alt="The Console Logs logo" class="logos" />
         <h2 class="title">The Console Logs</h2>
         <p class="text">
@@ -106,7 +124,7 @@
       <a
         href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
         class="ztm bubble"
-        transition:fly={{ duration: 1000, delay: 800, easing: quintOut, y: -150 }}>
+        transition:fly={{ duration: 1000, delay: 800, easing: quintOut, y: 50 }}>
         <img src="assets/ztm.png" alt="ZTM Academy" class="logos" />
         <h2 class="title">ZTM Academy</h2>
         <p class="text">
