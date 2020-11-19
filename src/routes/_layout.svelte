@@ -103,7 +103,7 @@
         href="https://www.bdesigned.dev"
         class="bubble"
         transition:fly={{ duration: 1000, delay: 100, easing: quintOut, y: 150 }}>
-        <img src="assets/logo.png" alt="bDesigned logo" class="logos" />
+        <img src="logo.png" alt="bDesigned logo" class="logos" />
         <h2 class="title">bDesigned</h2>
         <p class="text">
           Brittney runs her own freelance business, bDesigned. See some of her
@@ -114,7 +114,7 @@
         href="https://www.theconsolelogs.com"
         class="logs bubble"
         transition:fly={{ duration: 1000, delay: 400, easing: quintOut, y: 150 }}>
-        <img src="assets/logs.png" alt="The Console Logs logo" class="logos" />
+        <img src="logs.png" alt="The Console Logs logo" class="logos" />
         <h2 class="title">The Console Logs</h2>
         <p class="text">
           Brittney writes notes on a number of development topics at The Console
@@ -125,7 +125,7 @@
         href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
         class="ztm bubble"
         transition:fly={{ duration: 1000, delay: 800, easing: quintOut, y: 50 }}>
-        <img src="assets/ztm.png" alt="ZTM Academy" class="logos" />
+        <img src="ztm.png" alt="ZTM Academy" class="logos" />
         <h2 class="title">ZTM Academy</h2>
         <p class="text">
           Brittney is an insructor over at the ZTM Academy. Watch her workshop
