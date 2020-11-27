@@ -49,11 +49,14 @@
   }
 
   .container {
+    height: calc(100% - 83px);
     max-width: 1440px;
     margin: 2.5rem auto;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 4rem;
-    justify-content: center;
+    place-content: center;
+    place-items: center;
   }
 
   .title {
@@ -73,7 +76,11 @@
     padding: 0 2rem;
   }
 
-  @media (min-width: 1200px) {
+  #corgi {
+    width: 125px;
+  }
+
+  /* @media (min-width: 1200px) {
     .container {
       grid-template: 150px 150px 150px / 1fr 1fr 1fr;
     }
@@ -85,7 +92,7 @@
     .ztm {
       grid-area: 3/3/-1/-1;
     }
-  }
+  } */
 
   @media (min-width: 1024px) {
     .bubble {
@@ -112,7 +119,7 @@
       </a>
       <a
         href="https://www.theconsolelogs.com"
-        class="logs bubble"
+        class="bubble"
         transition:fly={{ duration: 1000, delay: 400, easing: quintOut, y: 150 }}>
         <img src="logs.png" alt="The Console Logs logo" class="logos" />
         <h2 class="title">The Console Logs</h2>
@@ -123,13 +130,28 @@
       </a>
       <a
         href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
-        class="ztm bubble"
+        class="bubble"
         transition:fly={{ duration: 1000, delay: 800, easing: quintOut, y: 50 }}>
         <img src="ztm.png" alt="ZTM Academy" class="logos" />
         <h2 class="title">ZTM Academy</h2>
         <p class="text">
           Brittney is an insructor over at the ZTM Academy. Watch her workshop
           on Responsive Web Design.
+        </p>
+      </a>
+      <a
+        href="https://www.redbubble.com/people/bDesigned/shop"
+        class="bubble"
+        transition:fly={{ duration: 1000, delay: 800, easing: quintOut, y: 50 }}>
+        <img
+          src="corgi-star.png"
+          alt="Party Corgi Star"
+          class="logos"
+          id="corgi" />
+        <h2 class="title">RedBubble Store</h2>
+        <p class="text">
+          Brittney has a store on RedBubble for Party Corgi and other content
+          created in Figma.
         </p>
       </a>
     </div>
