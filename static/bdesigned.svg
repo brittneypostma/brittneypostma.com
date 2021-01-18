@@ -1,0 +1,45 @@
+<svg width="38" height="46" viewBox="0 0 38 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d)">
+    <path
+      d="M5.62291 28.8463C3.50617 22.2609 6.47027 7.87176 10.6677 0.668365C10.8682 3.25479 3.31444 18.5802 12.1363 30.3849C17.4212 37.4568 21.5151 33.0818 21.8938 30.3849C23.362 34.4089 20.7348 36.5706 18.6422 37.1493C12.1363 38.9488 7.52969 34.7785 5.62291 28.8463Z"
+      fill="url(#paint0_diamond)" />
+    <path
+      d="M13.8737 15.4248C12.5576 15.3527 10.7659 14.703 13.6221 12.6183C15.5046 11.097 22.5303 8.84096 26.9814 12.6183C31.4325 16.3957 31.3206 19.9955 31.3206 22.2785C31.3206 25.7925 30.3712 29.4819 26.9814 33.0836C23.3531 36.9386 19.3976 37.7329 17.9241 37.7446C18.5963 37.7393 24.5177 35.7471 26.2358 29.9056C27.1705 26.7276 27.7189 22.9141 23.3531 21.7065L23.3298 21.7001C22.0324 21.3411 18.9882 20.4987 16.2091 23.9126C15.6192 24.3194 14.4429 24.8544 14.457 23.7398C14.4711 22.6252 16.7743 21.0677 17.9241 20.4282L16.2821 20.5561C17.0627 19.7245 18.8619 18.1831 20.1745 18.2375C18.7262 18.111 15.687 18.8112 13.1956 22.6008C12.7141 23.2398 11.6851 24.3372 11.4208 23.6154C11.1566 22.8937 11.3592 22.4861 11.4935 22.3726C11.8941 21.9289 12.7477 21.0892 12.9579 21.279C13.2207 21.5163 12.3698 20.3454 13.3736 19.3393C14.1767 18.5344 13.0641 19.2946 12.4074 19.7754C11.5997 20.3882 9.99779 21.324 10.052 20.1651C10.1062 19.0061 10.9925 17.961 11.4289 17.5834C12.132 16.8691 13.5127 15.5337 13.8737 15.4248Z"
+      fill="url(#paint1_linear)" />
+  </g>
+  <defs>
+    <filter id="filter0_d" x="0.921829" y="0.668365" width="34.399" height="45.0762" filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+    </filter>
+    <radialGradient id="paint0_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(6.34373 6.56905) rotate(64.5408) scale(37.1665 40.2023)">
+      <stop stop-color="#00E0FF" />
+      <stop offset="0.2" stop-color="#0EC9EC" />
+      <stop offset="0.4" stop-color="#15B3D9" />
+      <stop offset="0.6" stop-color="#189EC6" />
+      <stop offset="0.8" stop-color="#1889B3" />
+      <stop offset="1" stop-color="#1774A1" />
+    </radialGradient>
+    <linearGradient id="paint1_linear" x1="10.223" y1="16.1308" x2="28.773" y2="32.8798" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" />
+      <stop offset="0.0989583" stop-color="#E1F9FF" />
+      <stop offset="0.197917" stop-color="#C0F3FF" />
+      <stop offset="0.296875" stop-color="#9BEDFF" />
+      <stop offset="0.395833" stop-color="#6DE7FF" />
+      <stop offset="0.494792" stop-color="#00E0FF" />
+      <stop offset="0.494792" stop-color="#00E0FF" />
+      <stop offset="0.595833" stop-color="#18C2E5" />
+      <stop offset="0.696875" stop-color="#20A4CC" />
+      <stop offset="0.797917" stop-color="#2288B4" />
+      <stop offset="0.898958" stop-color="#216C9B" />
+      <stop offset="1" stop-color="#1D5284" />
+    </linearGradient>
+  </defs>
+</svg>
