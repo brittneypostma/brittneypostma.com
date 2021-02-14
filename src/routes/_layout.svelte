@@ -156,11 +156,12 @@
 
   .container {
     max-width: 1440px;
-    margin: 5rem auto;
+    padding: 8rem 0;
     display: grid;
     gap: 5rem;
     place-content: center;
     place-items: center;
+    z-index: 10;
   }
 
   .title {
@@ -187,10 +188,6 @@
 
   @media (min-width: 1200px) {
     .container {
-      position: fixed;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       gap: 4rem;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }

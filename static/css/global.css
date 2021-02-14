@@ -79,10 +79,8 @@ body {
 
 main {
   display: grid;
-  overflow: auto;
-  bottom: 0;
-  left: 0;
-  background-image: url(../assets/bg.png);
+  place-content: center;
+  background-image: url(../static/bg.png);
   background-repeat: no-repeat;
   background-position: bottom left;
 }

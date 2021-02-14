@@ -57,6 +57,7 @@
     right: 1rem;
     position: fixed;
     gap: 1rem;
+    z-index: 20;
   }
   img:hover {
     animation: wiggle 0.5s ease-in-out;
@@ -90,11 +91,6 @@
       z-index: 1;
       display: grid;
       gap: 1rem;
-      width: 100%;
-      justify-content: end;
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
     }
   }
 </style>
