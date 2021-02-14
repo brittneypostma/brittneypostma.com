@@ -10,7 +10,8 @@
   border-style: solid;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -25,6 +26,7 @@ html {
 /* Remove the tiny space around the edge of the page */
 body {
   margin: 0;
+  min-height: 100vh;
 }
 
 main {
