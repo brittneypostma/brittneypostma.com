@@ -59,7 +59,7 @@
         <img src="ztm.png" alt="ZTM Academy" class="logos" />
         <h2 class="title">ZTM Academy</h2>
         <p class="text">
-          Brittney is an insructor over at the ZTM Academy. Watch her workshop
+          Brittney is an instructor over at the ZTM Academy. Watch her workshop
           on Responsive Web Design.
         </p>
       </a>
