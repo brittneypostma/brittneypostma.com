@@ -1,3 +1,16 @@
+<div id="background-wrap">
+  <div class="bubble x1" />
+  <div class="bubble x2" />
+  <div class="bubble x3" />
+  <div class="bubble x4" />
+  <div class="bubble x5" />
+  <div class="bubble x6" />
+  <div class="bubble x7" />
+  <div class="bubble x8" />
+  <div class="bubble x9" />
+  <div class="bubble x10" />
+</div>
+
 <style>
   /* https://codepen.io/Mark_Bowley/pen/mEtqj */
 
@@ -286,7 +299,7 @@
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 70%
     ); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -303,16 +316,3 @@
     width: 180px;
   }
 </style>
-
-<div id="background-wrap">
-  <div class="bubble x1" />
-  <div class="bubble x2" />
-  <div class="bubble x3" />
-  <div class="bubble x4" />
-  <div class="bubble x5" />
-  <div class="bubble x6" />
-  <div class="bubble x7" />
-  <div class="bubble x8" />
-  <div class="bubble x9" />
-  <div class="bubble x10" />
-</div>

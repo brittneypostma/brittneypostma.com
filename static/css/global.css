@@ -77,13 +77,7 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  display: grid;
-  place-content: center;
-  background-image: url(../static/bg.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
+
 
 h1,
 h2,
