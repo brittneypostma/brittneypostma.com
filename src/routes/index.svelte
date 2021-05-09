@@ -30,10 +30,20 @@
   }
 
   .container {
-    max-width: 1440px;
+    padding-bottom: 8rem;
     display: grid;
     gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
     z-index: 10;
   }
+
+  @media only screen and (min-width: 800px) {
+    .container {
+      padding: 0 2rem;
+      margin: 0 auto;
+      max-width: 1440px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  }
+
 </style>

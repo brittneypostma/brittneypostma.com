@@ -10,7 +10,7 @@
   onMount(() => (ready = true))
 </script>
 
-<div class="bg-img"></div>
+<img src="./bg.png" alt="" class="bg-img">
 <Header />
 <Wallpaper />
 
@@ -23,17 +23,17 @@
 <Footer />
 
 <style>
-.bg-img {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../static/bg.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
+  .bg-img {
+    display: none;
+  }
+@media only screen and (min-width: 800px) {
+  .bg-img {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 657px;
+    height: 482px;
 }
-main {
-  display: grid;
-  justify-items: center;
-  align-items: start;
 }
 </style>

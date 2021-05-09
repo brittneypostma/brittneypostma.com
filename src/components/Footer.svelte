@@ -51,10 +51,11 @@
 
 <style>
   footer {
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
-    bottom: 1rem;
-    right: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 0;
     position: fixed;
     gap: 1rem;
     z-index: 20;
@@ -87,6 +88,7 @@
 
   @media (min-width: 1200px) {
     footer {
+      right: 0;
       padding: 0;
       z-index: 1;
       display: grid;
