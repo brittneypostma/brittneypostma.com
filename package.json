@@ -1,33 +1,16 @@
 {
   "name": "brittneypostma",
-  "description": "Landing Page for Brittney Postma, owner of bDesigned, The Console Logs, and instructor at the ZTM Academy.",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build"
-  },
-  "dependencies": {
-    "compression": "^1.7.1",
-    "polka": "next",
-    "sirv": "^1.0.0"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "sapper": "^0.28.0",
-    "svelte": "^3.17.3",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "@rollup/plugin-babel": "^5.0.0",
-    "@rollup/plugin-commonjs": "^14.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
-    "@rollup/plugin-replace": "^2.2.0",
-    "@rollup/plugin-url": "^5.0.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-svelte": "^6.0.0",
-    "rollup-plugin-terser": "^7.0.0"
-  }
+    "@sveltejs/adapter-static": "^1.0.0-next.9",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.38.2"
+  },
+  "type": "module",
+  "dependencies": {}
 }
