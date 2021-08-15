@@ -40,8 +40,8 @@
     <img src="youtube.png" alt="youtube" />
   </a>
   <a
-    aria-label="opens bDesigned dev.to profil in new tab"
-    href="https://dev.to/bdesigned"
+    aria-label="opens Brittney Postma's dev.to profile in new tab"
+    href="https://dev.to/brittneypostma"
     rel="noopener noreferrer"
     target="_blank"
   >
