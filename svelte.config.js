@@ -1,5 +1,5 @@
 /* https://kit.svelte.dev/docs#configuration */
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-netlify'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
