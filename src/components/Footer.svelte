@@ -58,6 +58,7 @@
     bottom: 0;
     position: fixed;
     gap: 1rem;
+    width: 100%;
     z-index: 20;
   }
   img:hover {
@@ -89,10 +90,11 @@
   @media (min-width: 1200px) {
     footer {
       right: 0;
-      padding: 0;
+      padding: 0 1rem 1rem 0;
       z-index: 1;
       display: grid;
       gap: 1rem;
+      justify-content: end;
     }
   }
 </style>
