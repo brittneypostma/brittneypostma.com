@@ -4,3 +4,5 @@
 yarn-error.log
 build
 .svelte-kit
+# Local Netlify folder
+.netlify
