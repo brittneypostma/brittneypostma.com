@@ -1,4 +1,5 @@
 [build]
   command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
   publish = "build/"
+  environment = { NODE_VERSION = "16"}
   functions = "src/functions/"
