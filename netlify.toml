@@ -1,7 +1,4 @@
 [build]
   publish = "build/"
-  environment = { NODE_VERSION = "16" }
-  functions = "src/functions/"
-
-[build.environment]
-  NPM_FLAGS="--prefix=/dev/null"
+  environment = NPM_FLAGS="--prefix=/dev/null"
+  
