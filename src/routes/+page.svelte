@@ -18,7 +18,7 @@
 	<Bubble
 		url="https://purrfect.dev"
 		title="Purrfect Dev"
-		text="Brittney is the cohost of the podcast the Coding Cat Dev Podcast."
+		text="Brittney is the cohost of the Coding Cat Dev Podcast."
 	/>
 	<Bubble
 		url="https://www.theconsolelogs.com"
