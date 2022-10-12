@@ -1,4 +1,5 @@
 [build]
   publish = "build/"
-  environment = NPM_FLAGS="--prefix=/dev/null"
-  
+
+[build.environment]
+  NPM_FLAGS="--prefix=/dev/null"
