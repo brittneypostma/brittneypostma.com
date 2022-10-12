@@ -18,7 +18,7 @@
 	<Bubble
 		url="https://purrfect.dev"
 		title="Purrfect Dev"
-		text="Brittney is the cohost of the podcast Purrfect.dev."
+		text="Brittney is the cohost of the podcast the Coding Cat Dev Podcast."
 	/>
 	<Bubble
 		url="https://www.theconsolelogs.com"
@@ -26,15 +26,15 @@
 		text="Brittney writes notes on a number of topics at The Console Logs."
 	/>
 	<Bubble
-		url="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
+		url="https://academy.zerotomastery.io/?affcode=441520_gjue7n-1"
 		title="ZTM Academy"
-		text=" Brittney is an instructor over at the ZTM Academy. Watch her workshop
+		text=" Brittney is an star mentord over at the ZTM Academy. Watch her workshop
   on Responsive Web Design."
 	/>
 	<Bubble
 		url="https://www.redbubble.com/people/bDesigned/shop"
 		title="Redbubble Shop"
-		text="Brittney has a store on RedBubble for Party Corgi and other content
+		text="Brittney has a store on RedBubble for Jamstack stickers and other content
   created in Figma."
 	/>
 </div>
