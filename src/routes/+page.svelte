@@ -53,7 +53,7 @@
 	}
 
 	.container {
-		padding-bottom: 8rem;
+		margin-bottom: 8rem;
 		display: grid;
 		gap: 5rem;
 		justify-items: center;
@@ -62,8 +62,7 @@
 
 	@media only screen and (min-width: 1024px) {
 		.container {
-			padding: 0 2rem;
-			margin: 0 auto;
+			margin: 0 auto 8rem;
 			max-width: 800px;
 			display: flex;
 			flex-wrap: wrap;
