@@ -1,0 +1,3 @@
+[build]
+  publish = ".svelte-kit"
+  command = "vite build"
