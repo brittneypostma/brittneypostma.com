@@ -28,8 +28,7 @@
 	<Bubble
 		url="https://academy.zerotomastery.io/?affcode=441520_gjue7n-1"
 		title="ZTM Academy"
-		text=" Brittney is an star mentor over at the ZTM Academy. Watch her workshop
-  on Responsive Web Design."
+		text=" Brittney is an star mentor over at the ZTM Academy."
 	/>
 	<Bubble
 		url="https://www.redbubble.com/people/bDesigned/shop"
