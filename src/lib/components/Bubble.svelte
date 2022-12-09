@@ -16,7 +16,7 @@
       y: 50,
     }}"
   >
-    <img src="{title}.png" alt={title} class="logos" />
+    <!-- <img src="{title}.png" alt={title} class="logos" /> -->
     <h2 class="title">{title}</h2>
     <p class="text">
       {text}
