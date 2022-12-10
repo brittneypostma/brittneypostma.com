@@ -1,4 +1,4 @@
-<div class="lights z-0 fixed">
+<div class="lights z-10 fixed">
 	<div
 		class="light"
 		style="--duration: 8; --delay: 9; --x: 2; --y: 0; --scale: 0.08283214196691506">

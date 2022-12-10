@@ -1,5 +1,5 @@
 <h1 class="text-center my-12">Contact Me</h1>
-<div class="container pb-48" id="contact">
+<div class="container pb-48">
 	<div id="envelope" class="envelope">
 		<svg
 			id="flap"

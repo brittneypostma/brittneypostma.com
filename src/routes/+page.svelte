@@ -19,13 +19,13 @@
 <section class="h-screen">
 	<Home />
 </section>
-<section class="bg-primary-900 bg-opacity-70 text-primary-100">
+<section class="bg-primary-900 bg-opacity-70 text-primary-100" id="about">
 	<About />
 </section>
-<section>
+<section id="work">
 	<Work />
 </section>
-<section>
+<section id="contact">
 	<Contact />
 </section>
 

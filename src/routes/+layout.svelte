@@ -15,6 +15,8 @@
 	// onMount(() => (ready = true))
 </script>
 
+<Stars />
+<Lights />
 <!-- <img src="./bg.png" alt class="bg-img" /> -->
 <Header />
 <Sidebar />
@@ -22,8 +24,6 @@
 <main>
 	<slot />
 </main>
-<Stars />
-<Lights />
 
 <style lang="postcss">
 	main {
