@@ -1,14 +1,10 @@
-<header><img src="brittney.svg" alt="brittney postma" /></header>
+<script>
+	import Brittney from '$lib/components/Brittney.svelte'
+</script>
 
-<style>
-	header {
-		position: sticky;
-		top: 0;
-		padding: 1rem 0;
-	}
-
-	img {
-		width: 200px;
-		padding-inline: 1rem;
-	}
-</style>
+<header class="sticky top-0 p-4">
+	<a href="/">
+		<span class="sr-only">Go to home page</span>
+		<Brittney width="200" />
+	</a>
+</header>

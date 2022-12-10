@@ -1,6 +1,9 @@
 <script>
+	// import hljs from 'highlight.js'
+	// import '$lib/styles/highlight-js.css'
 	import '$lib/styles/theme.css'
-	import '../app.postcss'
+	import '@skeletonlabs/skeleton/styles/all.css'
+	import '../app.css'
 	import { onMount } from 'svelte'
 
 	import Header from '$lib/components/Header.svelte'

@@ -1,0 +1,25 @@
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+.page-container {
+	@apply container mx-auto p-4 md:p-12 space-y-8 md:space-y-12;
+}
+
+body {
+	@apply bg-surface-900;
+	background-image: radial-gradient(at 36% 0%, rgba(56, 248, 255, 0.2) 0px, transparent 50%),
+		radial-gradient(at 71% 4%, rgba(56, 248, 255, 0.18) 0px, transparent 50%);
+}
+
+/* pink and blues lights */
+.light {
+	background-image: radial-gradient(at 73% 84%, hsla(213, 80%, 69%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 16% 79%, hsla(268, 79%, 73%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 88% 64%, hsla(290, 68%, 62%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 67% 14%, hsla(167, 87%, 76%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 70% 75%, hsla(170, 71%, 68%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 98% 62%, hsla(244, 77%, 60%, 0.18) 0px, transparent 50%),
+		radial-gradient(at 50% 19%, hsla(322, 97%, 63%, 0.18) 0px, transparent 50%);
+}

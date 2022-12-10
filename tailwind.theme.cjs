@@ -1,5 +1,5 @@
 module.exports = {
-  theme: {
+  extend: {
     fontFamily: {
       sans: ['Quicksand', 'sans-serif'],
       heading: ['Pacifico', 'sans-serif'],
