@@ -13,7 +13,7 @@ const config = {
     require('@skeletonlabs/skeleton/tailwind/theme.cjs'),
     require('@tailwindcss/typography'),
   ],
-  presets: [require('./theme.cjs')]
+  presets: [require('./tailwind.theme.cjs')]
 }
 
 module.exports = config

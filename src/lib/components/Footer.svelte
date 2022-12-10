@@ -1,63 +1,67 @@
+<script>
+	import twitter from '$lib/images/twitter.png'
+	import linkedin from '$lib/images/linkedin.png'
+	import github from '$lib/images/github.png'
+	import dev from '$lib/images/dev.png'
+	import youtube from '$lib/images/youtube.png'
+	import sirens from '$lib/images/sirens.png'
+
+</script>
+
 <footer>
 	<a
-		aria-label="opens bDesigned facebook page in new tab"
-		href="https://www.facebook.com/b.Designed11/"
-		rel="noopener noreferrer"
-		target="_blank"
-	>
-		<img src="facebook.png" alt="facebook" />
-	</a>
-	<a
-		aria-label="opens Brittney Postma's twitter page in new tab"
 		href="https://twitter.com/BrittneyPostma"
 		rel="noopener noreferrer"
 		target="_blank"
 	>
-		<img src="twitter.png" alt="twitter" />
+		<img src={twitter} alt="opens Brittney Postma's twitter page in new tab" />
 	</a>
 	<a
-		aria-label="opens Brittney Postma's linkedin in new tab"
 		href="https://www.linkedin.com/in/brittney-postma-868928178/"
 		rel="noopener noreferrer"
 		target="_blank"
 	>
-		<img src="linkedin.png" alt="linkedin" />
+		<img src={linkedin} alt="opens Brittney Postma's linkedin in new tab" />
 	</a>
 	<a
-		aria-label="opens Brittney Postma's GitHub in new tab"
 		href="https://github.com/brittneypostma"
 		rel="noopener noreferrer"
 		target="_blank"
 	>
-		<img src="github.png" alt="github" />
+		<img src={github} alt="opens Brittney Postma's GitHub in new tab" />
 	</a>
 	<a
-		aria-label="opens bDesigned YouTube channel in new tab"
-		href="https://www.youtube.com/channel/UCyvOaBoW3Jti69U4Gw1ci9Q"
-		rel="noopener noreferrer"
-		target="_blank"
-	>
-		<img src="youtube.png" alt="youtube" />
-	</a>
-	<a
-		aria-label="opens Brittney Postma's dev.to profile in new tab"
 		href="https://dev.to/brittneypostma"
 		rel="noopener noreferrer"
 		target="_blank"
 	>
-		<img src="dev.png" alt="dev" />
+		<img src={dev} alt="opens Brittney Postma's dev.to profile in new tab" />
+	</a>
+	<a
+		href="https://www.youtube.com/@codingcatdev"
+		rel="noopener noreferrer"
+		target="_blank"
+	>
+		<img src={youtube} alt="opens codingcat.dev YouTube channel in new tab" />
+	</a>
+	<a
+		href="https://sveltesirens.dev"
+		rel="noopener noreferrer"
+		target="_blank"
+	>
+		<img src={sirens} alt="opens sveltesirens.dev site in new tab" />
 	</a>
 </footer>
 
 <style>
 	footer {
-		padding: 2rem;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		padding: 1rem;
+		display: grid;
+		gap: 1rem;
+		justify-content: start;
+		left: 0;
 		bottom: 0;
 		position: fixed;
-		gap: 1rem;
 		width: 100%;
 		z-index: 20;
 	}
@@ -90,14 +94,4 @@
 		}
 	}
 
-	@media (min-width: 1200px) {
-		footer {
-			right: 0;
-			padding: 0 1rem 1rem 0;
-			z-index: 1;
-			display: grid;
-			gap: 1rem;
-			justify-content: end;
-		}
-	}
 </style>
