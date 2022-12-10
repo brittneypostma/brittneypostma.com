@@ -1,20 +1,13 @@
 const config = {
   content: [
-    "./src/**/*.{html,js,svelte,ts}",
-    require('path').join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
+    "./src/**/*.{html,js,svelte,ts}"
   ],
-  darkMode:'class',
-
-  // theme: {
-  //   extend: {},
-  // },
+  darkMode: 'class',
 
   plugins: [
-    require('@skeletonlabs/skeleton/tailwind/theme.cjs'),
     require('@tailwindcss/typography'),
   ],
   presets: [require('./tailwind.theme.cjs')]
 }
 
 module.exports = config
-      
