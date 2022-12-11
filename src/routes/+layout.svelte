@@ -22,7 +22,7 @@
 <!-- parallax -->
 <div class="fixed w-full z-40 bottom-0">
 	<Waves />
-	<div class="beach fixed bottom-0 right-0 text-accent-900">
+	<div class="beach fixed bottom-0 right-0 text-accent-900 pointer-events-none">
 		<Beach height="{'40vh'}" />
 	</div>
 </div>

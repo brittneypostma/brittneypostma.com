@@ -5,6 +5,7 @@
 * {
 	scrollbar-width: thin;
 	scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
+	scroll-behavior: smooth;
 }
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -30,7 +31,6 @@ body,
 
 body {
 	@apply bg-surface-900 font-sans text-white text-lg md:text-xl;
-	scroll-behavior: smooth;
 }
 
 .btn {
