@@ -1,4 +1,4 @@
-<h1 class="text-center my-12">Contact Me</h1>
+<h2 class="text-center my-12">Contact Me</h2>
 <div class="container pb-96">
 	<div id="envelope" class="envelope">
 		<svg

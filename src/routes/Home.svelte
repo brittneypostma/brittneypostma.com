@@ -1,14 +1,14 @@
 <script>
 	import { onMount } from 'svelte'
 
-	const changingText = ['Developer', 'Designer', 'Teacher', 'Creator', 'Mentor']
+	import { changingTitles } from '$lib/data/description'
 
 	let idx = 0
 
 	onMount(() => {
 		setInterval(() => {
 			idx++
-			if (idx === changingText.length) {
+			if (idx === changingTitles.length && changingTitles) {
 				idx = 0
 			}
 		}, 1000)
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<h2 class="font-sans text-2xl">
-			I am a <span class="bg-accent-400 bg-opacity-50 px-2">{changingText[idx]}</span>.
+			I am a <span class="bg-accent-400 bg-opacity-50 px-2">{changingTitles[idx]}</span>.
 		</h2>
 		<section class="flex gap-6 sm:justify-between mt-8">
 			<Links />

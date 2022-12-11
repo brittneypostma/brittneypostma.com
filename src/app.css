@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgb(var(--color-surface-400));
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(var(--color-primary-400));
+	border-radius: 14px;
+	border: 3px solid rgb(var(--color-surface-400));
+}
+
 html,
 body,
 #svelte {

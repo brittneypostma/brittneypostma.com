@@ -2,7 +2,7 @@
 	font-family: 'Victor Mono';
 	font-style: normal;
 	font-weight: 400;
-	src: url('./fonts/fira-mono/VictorMono-Regular.woff2') format('woff2');
+	src: url('./fonts/VictorMono-Regular.woff2') format('woff2');
 }
 
 @font-face {

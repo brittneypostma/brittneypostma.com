@@ -1,4 +1,4 @@
-<!-- Credit to Jhey Thompkins, brilliant creator!
+<!-- Credit to Jhey Tompkins, brilliant creator!
   https://twitter.com/jh3yy
   https://codepen.io/jh3y/pen/KKpaZrO 
 -->
