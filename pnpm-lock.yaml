@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@skeletonlabs/skeleton': ^0.76.3
+  '@sveltejs/adapter-netlify': 1.0.0-next.85
   '@sveltejs/adapter-static': 1.0.0-next.44
   '@sveltejs/kit': ^1.0.0-next.581
   '@tailwindcss/typography': ^0.5.8
@@ -23,6 +24,7 @@ specifiers:
 
 devDependencies:
   '@skeletonlabs/skeleton': 0.76.3
+  '@sveltejs/adapter-netlify': 1.0.0-next.85
   '@sveltejs/adapter-static': 1.0.0-next.44
   '@sveltejs/kit': 1.0.0-next.581_svelte@3.54.0+vite@4.0.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
@@ -279,6 +281,10 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
+  /@iarna/toml/2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
   /@jridgewell/sourcemap-codec/1.4.14:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
@@ -310,6 +316,14 @@ packages:
 
   /@skeletonlabs/skeleton/0.76.3:
     resolution: {integrity: sha512-6+09GxDjeh8cKcjDl4ROp8/y6J0v2OPnn5gpROm9XdqztNKVByfrXphPaqnuvbpwLIRpsJL//xVf+/iQUMEdRg==}
+    dev: true
+
+  /@sveltejs/adapter-netlify/1.0.0-next.85:
+    resolution: {integrity: sha512-9g+aw9R+mNSr75UhKUPX1uFzcky2TVSs6sf5NdTWlaGmm8TeUIydiTSKXXByEM2JHd3m3I132X0SWuM+TqSbPw==}
+    dependencies:
+      '@iarna/toml': 2.2.5
+      esbuild: 0.16.3
+      set-cookie-parser: 2.5.1
     dev: true
 
   /@sveltejs/adapter-static/1.0.0-next.44:
