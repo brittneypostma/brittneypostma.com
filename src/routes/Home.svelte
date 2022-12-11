@@ -31,7 +31,7 @@
 		<h2 class="font-sans text-2xl">
 			I am a <span class="bg-accent-400 bg-opacity-50 px-2">{changingTitles[idx]}</span>.
 		</h2>
-		<section class="flex gap-6 sm:justify-between mt-8">
+		<section class="flex gap-6 sm:justify-between mt-4 text-primary-400">
 			<Links />
 		</section>
 	</div>

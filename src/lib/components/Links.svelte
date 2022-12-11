@@ -1,5 +1,13 @@
-<a href="#about"> about </a>
+<script>
+	export let open = false
+	export let topNav = false
+</script>
 
-<a href="#work"> work </a>
+{#if topNav}
+	<a href="/" class="text-inherit" on:click="{() => (open = !open)}">home</a>
+{/if}
+<a href="#about" class="text-inherit" on:click="{() => (open = !open)}"> about </a>
 
-<a href="#contact"> contact </a>
+<a href="#work" class="text-inherit" on:click="{() => (open = !open)}"> work </a>
+
+<a href="#contact" class="text-inherit" on:click="{() => (open = !open)}"> contact </a>
