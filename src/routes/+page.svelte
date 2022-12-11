@@ -4,7 +4,6 @@
 	import Work from './Work.svelte'
 	import Contact from './Contact.svelte'
 	let y
-	let speed = 1
 </script>
 
 <svelte:window bind:scrollY="{y}" />
