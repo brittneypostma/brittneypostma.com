@@ -1,8 +1,8 @@
 <script>
 	import { list } from '$lib/data/description'
 
-	let selected
-	let subtitle
+	let selected = ''
+	let subtitle = 'developer'
 
 	function updateSelected(e, title, text) {
 		const target = e.target.innerText
@@ -20,7 +20,8 @@
 			{#each list as { title, text }}
 				<button
 					on:click="{event => updateSelected(event, title, text)}"
-					class="border-2 border-primary-400  transition-colors hover:bg-surface-900 hover:border-tertiary-400"
+					class="font-bold border-2 border-primary-400  transition-colors hover:bg-surface-900 hover:border-tertiary-400"
+					class:selected="{title === subtitle}"
 					>{title.toUpperCase()}
 				</button>
 			{/each}
@@ -36,3 +37,9 @@
 		</section>
 	</section>
 </article>
+
+<style lang="postcss">
+	.selected {
+		@apply bg-primary-400 text-accent-900 hover:text-white border-accent-400;
+	}
+</style>

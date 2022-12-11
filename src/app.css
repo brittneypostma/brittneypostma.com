@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-	@apply text-3xl;
+	@apply text-3xl lg:text-5xl;
 }
 
 a {
@@ -89,6 +89,10 @@ a:hover:after {
 article {
 	max-width: 80ch;
 	margin-inline: auto;
+}
+
+p {
+	@apply break-words whitespace-normal;
 }
 
 /* pink and blues lights */

@@ -15,7 +15,7 @@
 			class="form text-white py-10"
 			name="contact"
 			method="POST"
-			action="/"
+			action="/#contact"
 			Content-Type="application/x-www-form-urlencoded"
 			netlify
 			netlify-honeypot="bot-field">
