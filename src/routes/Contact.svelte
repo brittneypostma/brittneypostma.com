@@ -1,4 +1,4 @@
-<h1 class="text-center my-12">Contact Me</h1>
+<h2 class="text-center my-12">Contact Me</h2>
 <div class="container pb-96">
 	<div id="envelope" class="envelope">
 		<svg
@@ -15,7 +15,7 @@
 			class="form text-white py-10"
 			name="contact"
 			method="POST"
-			action="/"
+			action="/#contact"
 			Content-Type="application/x-www-form-urlencoded"
 			netlify
 			netlify-honeypot="bot-field">
@@ -114,10 +114,6 @@
 		color: rbg(var(--color-primary-200)) !important;
 	}
 
-	#first-name {
-		grid-column: 1/1;
-	}
-
 	input[type='text'],
 	input[type='email'],
 	textarea {
@@ -149,10 +145,6 @@
 		resize: vertical;
 		margin: 0;
 		vertical-align: top;
-	}
-
-	#submit {
-		grid-column: 1/-1;
 	}
 
 	@keyframes open-flap {

@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
+	scroll-behavior: smooth;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgb(var(--color-surface-400));
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(var(--color-primary-400));
+	border-radius: 14px;
+	border: 3px solid rgb(var(--color-surface-400));
+}
+
 html,
 body,
 #svelte {
@@ -9,8 +30,7 @@ body,
 }
 
 body {
-	@apply bg-surface-900 font-sans text-white;
-	scroll-behavior: smooth;
+	@apply bg-surface-900 font-sans text-white text-lg md:text-xl;
 }
 
 .btn {
@@ -44,16 +64,35 @@ h1 {
 }
 
 h2 {
-	@apply text-3xl;
+	@apply text-3xl lg:text-5xl;
 }
 
 a {
-	@apply whitespace-nowrap text-primary-400;
+	@apply whitespace-nowrap text-primary-400 border-b-1 border-transparent hover:text-tertiary-400 transition-all;
+}
+
+a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0;
+	background: transparent;
+}
+
+a:hover:after {
+	@apply bg-primary-400;
+	width: 100%;
+	transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 article {
 	max-width: 80ch;
 	margin-inline: auto;
+}
+
+p {
+	@apply break-words whitespace-normal;
 }
 
 /* pink and blues lights */

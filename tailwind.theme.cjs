@@ -7,6 +7,9 @@ module.exports = {
         mono: ['Victor Mono', 'monospace'],
         thin: ['Poppins-Light', 'sans-serif']
       },
+      borderWidth: {
+        1: '1px'
+      },
       boxShadow: {
         outline: '0 0 0 3px #FC5390',
       },
