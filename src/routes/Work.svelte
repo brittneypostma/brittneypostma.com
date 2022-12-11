@@ -31,9 +31,7 @@
 			html to advanced javascript and react.
 		</p>
 	</a>
-	<a
-		href="https://academy.zerotomastery.io/courses/workshops/lectures/26936743?affcode=441520_gjue7n-1"
-		class="bubble">
+	<a href="https://academy.zerotomastery.io/courses/?affcode=441520_gjue7n-1" class="bubble">
 		<img src="{ztm}" alt="ZTM Academy" class="logos" />
 		<h3 class="title">ZTM Academy</h3>
 		<p class="text">I am a mentor and previous workshop instructor at Zero to Mastery Academy.</p>
