@@ -15,7 +15,7 @@
 
 <article class="grid gap-6 mt-4">
 	<h2 class="text-white">About Me</h2>
-	<section class="grid gap-8 lg:h-[50vh]">
+	<section class="grid gap-8 lg:h-[50vh] content-start items-start ">
 		<nav class="grid bg-primary-900 md:grid-cols-5">
 			{#each list as { title, text }}
 				<button
