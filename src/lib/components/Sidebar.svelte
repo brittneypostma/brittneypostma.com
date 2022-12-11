@@ -5,6 +5,7 @@
 	import dev from '$lib/images/dev.png'
 	import youtube from '$lib/images/youtube.png'
 	import sirens from '$lib/images/sirens.png'
+	import codingCat from '$lib/images/coding-cat.png'
 	import logs from '$lib/images/logs.png'
 </script>
 
@@ -29,6 +30,9 @@
 	</a>
 	<a href="https://sveltesirens.dev" rel="noopener noreferrer" target="_blank">
 		<img src="{sirens}" alt="opens sveltesirens.dev site in new tab" />
+	</a>
+	<a href="https://codingcat.dev/" rel="noreferrer" target="_blank">
+		<img src="{codingCat}" alt="opens codingcat.dev site in new tab" />
 	</a>
 	<a href="https://theconsolelogs.com/" rel="noreferrer" target="_blank">
 		<img src="{logs}" alt="opens theconsolelogs.com site in new tab" />
