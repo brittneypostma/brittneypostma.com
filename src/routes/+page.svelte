@@ -1,70 +1,38 @@
 <script>
-	import { fade } from 'svelte/transition'
-	import Bubble from '$lib/components/Bubble.svelte'
-	import Beach from '$lib/components/Beach.svelte'
+	import Home from './Home.svelte'
+	import About from './About.svelte'
+	import Work from './Work.svelte'
+	import Contact from './Contact.svelte'
+	let y
+	let speed = 1
 </script>
 
-<!-- <div class="container">
-	<Bubble
-		url="https://sveltesirens.dev"
-		title="Svelte Sirens"
-		text="Brittney is the founder of the Svelte Sirens, a Svelte Society for women and non-binary people." />
-	<Bubble
-		url="https://codingcat.dev"
-		title="Coding Cat"
-		text="Brittney is the frontend dev and designer, plus an instructor at CodingCat.dev." />
-	<Bubble
-		url="https://purrfect.dev"
-		title="Purrfect Dev"
-		text="Brittney is the cohost of the Coding Cat Dev Podcast." />
-	<Bubble
-		url="https://www.theconsolelogs.com"
-		title="The Console Logs"
-		text="Brittney writes notes on a number of topics at The Console Logs." />
-	<Bubble
-		url="https://academy.zerotomastery.io/?affcode=441520_gjue7n-1"
-		title="ZTM Academy"
-		text=" Brittney is an star mentor over at the ZTM Academy." />
-	<Bubble
-		url="https://www.redbubble.com/people/bDesigned/shop"
-		title="Redbubble Shop"
-		text="Brittney has a store on RedBubble for Jamstack stickers and other content
-  created in Figma." />
-</div> -->
+<svelte:window bind:scrollY="{y}" />
+<!-- sections -->
+<!-- <div style="transform: translate(0, {-y * speed}px)"> -->
+<section class="h-screen">
+	<Home />
+</section>
+<section class="bg-surface-900 text-primary-100" id="about">
+	<About />
+</section>
+<section id="work">
+	<Work />
+</section>
+<section id="contact">
+	<Contact />
+</section>
 
-<!-- <div class="beach" transition:fade="{{ duration: 1000 }}">
-	<Beach />
-</div> -->
-
-<!-- <style>
+<!-- </div> -->
+<style lang="postcss">
 	.beach {
 		filter: drop-shadow(-4px -8px 8px rgba(3, 3, 3, 0.25));
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		z-index: -2;
 	}
-
-	.container {
-		margin-bottom: 8rem;
-		display: grid;
-		gap: 5rem;
-		justify-items: center;
-		z-index: 10;
+	section {
+		@apply pl-20 p-8 lg:p-20 grid items-center justify-items-center content-center;
+		scroll-snap-align: center;
 	}
-
-	@media only screen and (min-width: 1024px) {
-		.container {
-			margin: 0 auto 8rem;
-			max-width: 800px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
+	section:not(:first-of-type) {
+		@apply h-full w-full;
 	}
-	@media only screen and (min-width: 1440px) {
-		.container {
-			max-width: 1200px;
-		}
-	}
-</style> -->
+</style>

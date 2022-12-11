@@ -1,14 +1,16 @@
-<header><img src="brittney.svg" alt="brittney postma" /></header>
+<script>
+	import Brittney from '$lib/components/Brittney.svelte'
+	import Nav from '$lib/components/Nav.svelte'
 
-<style>
-	header {
-		position: sticky;
-		top: 0;
-		padding: 1rem 0;
-	}
+	let open = false
+</script>
 
-	img {
-		width: 200px;
-		padding-inline: 1rem;
-	}
-</style>
+<header
+	class="bg-surface-900 fixed top-0 z-50 bg-opacity-70
+   shadow-inset w-full flex justify-between items-center p-4">
+	<a href="/">
+		<span class="sr-only">Go to home page</span>
+		<Brittney width="150" />
+	</a>
+	<Nav bind:sidebar="{open}" />
+</header>
