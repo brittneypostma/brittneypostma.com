@@ -1,4 +1,4 @@
-<article class=" relative z-50">
+<article>
 	<h1 class="text-white">About Me</h1>
 	<!-- <img src="me.png" alt="Brittney" class="mt-10 rounded-full shadow-2xl lg:float-left lg:m-12" /> -->
 	<p>

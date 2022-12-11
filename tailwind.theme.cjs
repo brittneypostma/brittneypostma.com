@@ -2,9 +2,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Poppins-Regular', 'sans-serif'],
         heading: ['Pacifico', 'sans-serif'],
-        mono: ['Victor Mono', 'monospace']
+        mono: ['Victor Mono', 'monospace'],
+        thin: ['Poppins-Light', 'sans-serif']
       },
       boxShadow: {
         outline: '0 0 0 3px #FC5390',

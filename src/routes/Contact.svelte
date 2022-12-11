@@ -1,5 +1,5 @@
 <h1 class="text-center my-12">Contact Me</h1>
-<div class="container pb-48">
+<div class="container pb-96">
 	<div id="envelope" class="envelope">
 		<svg
 			id="flap"
@@ -12,7 +12,7 @@
 		</svg>
 
 		<form
-			class="form text-white"
+			class="form text-white py-10"
 			name="contact"
 			method="POST"
 			action="/"
@@ -22,13 +22,9 @@
 			<label for="form-name" id="form-name">
 				<input type="hidden" name="form-name" value="contact" />
 			</label>
-			<label for="first-name" id="first-name">
+			<label for="name" id="name">
 				First Name
-				<input class="text" type="text" name="first-name" placeholder="Brittney" required />
-			</label>
-			<label for="last-name" id="last-name">
-				Last Name
-				<input class="text" type="text" name="last-name" placeholder="Postma" required />
+				<input class="text" type="text" name="name" placeholder="Brittney Postma" required />
 			</label>
 			<label for="email" id="email">
 				Email
@@ -50,18 +46,9 @@
 			<button type="submit" name="submit" value="Send" class="btn"> Submit </button>
 		</form>
 	</div>
-	<div class="thanks">Thanks</div>
 </div>
 
 <style lang="postcss">
-	input[type='text']:focus,
-	input[type='email']:focus,
-	textarea:focus {
-		box-shadow: 0 0 0 3px rbg(var(--color-primary-400));
-	}
-	.thanks {
-		display: none;
-	}
 	.container {
 		display: flex;
 		align-items: center;
@@ -71,18 +58,18 @@
 	}
 
 	.envelope {
-		@apply bg-primary-900;
+		@apply bg-surface-900;
 		margin-top: 0;
 		position: relative;
 		width: 40%;
-		height: 500px;
+		height: 600px;
 		display: grid;
 		justify-items: center;
 	}
 
 	.flap {
 		transition: 0.5s all linear;
-		fill: whitesmoke;
+		fill: rgb(var(--color-surface-500));
 		animation: open-flap 2s ease-in-out forwards;
 		transform-origin: 0 0 0;
 	}
@@ -102,35 +89,29 @@
 		display: grid;
 		justify-content: stretch;
 		align-content: flex-start;
-		grid-gap: 1em;
-		grid-template-columns: 1fr 1fr;
-		margin: 0;
-		padding: 0;
+		grid-gap: 1rem;
 		font-size: 18px;
+	}
+	label,
+	input {
+		@apply w-full;
 	}
 
 	input[placeholder],
 	[placeholder],
-	*[placeholder] {
-		letter-spacing: 1.5px;
-		color: rbg(var(--color-primary-400)) !important;
-	}
-
+	*[placeholder],
 	textarea[placeholder] {
-		letter-spacing: 1.5px;
-		padding: 10px;
-		color: rbg(var(--color-primary-400)) !important;
+		@apply text-primary-200 font-thin;
 	}
 
 	::-webkit-input-placeholder {
 		/* Chrome/Opera/Safari */
-		letter-spacing: 1.5px;
-		color: rbg(var(--color-primary-400)) !important;
+		color: rbg(var(--color-primary-200)) !important;
 	}
 
 	textarea::-webkit-input-placeholder {
 		letter-spacing: 1.5px;
-		color: rbg(var(--color-primary-400)) !important;
+		color: rbg(var(--color-primary-200)) !important;
 	}
 
 	#first-name {
@@ -140,7 +121,7 @@
 	input[type='text'],
 	input[type='email'],
 	textarea {
-		@apply border-2 border-primary-400 focus:border-tertiary-500;
+		@apply border-2 border-accent-400 focus:border-tertiary-500;
 		border-radius: 5px;
 		line-height: 18px;
 		background-color: transparent;
@@ -153,10 +134,6 @@
 	}
 
 	#email {
-		grid-column: 1/-1;
-	}
-
-	#subject {
 		grid-column: 1/-1;
 	}
 

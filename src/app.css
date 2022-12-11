@@ -9,12 +9,12 @@ body,
 }
 
 body {
-	@apply bg-surface-900 font-sans;
+	@apply bg-surface-900 font-sans text-white;
 	scroll-behavior: smooth;
 }
 
 .btn {
-	@apply px-8 py-4 rounded-lg bg-primary-400 text-white font-heading font-bold;
+	@apply px-8 py-4 rounded-lg bg-primary-400 text-white font-sans font-bold;
 }
 /* background: radial-gradient(ellipse at top, #e66465, transparent),
 	radial-gradient(ellipse at bottom, #4d9f0c, transparent); */
@@ -40,7 +40,7 @@ h6 {
 }
 
 h1 {
-	@apply text-5xl;
+	@apply text-5xl mb-8;
 }
 
 h2 {

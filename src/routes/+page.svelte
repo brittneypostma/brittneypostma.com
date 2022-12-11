@@ -1,25 +1,19 @@
 <script>
-	import Beach from '$lib/components/Beach.svelte'
-	import Waves from '$lib/components/Waves.svelte'
 	import Home from './Home.svelte'
 	import About from './About.svelte'
 	import Work from './Work.svelte'
 	import Contact from './Contact.svelte'
+	let y
+	let speed = 1
 </script>
 
-<!-- parallax -->
-<div class="fixed w-full z-40 bottom-0">
-	<Waves />
-	<div class="beach fixed bottom-0 right-0 text-surface-900">
-		<Beach height="{'40vh'}" />
-	</div>
-</div>
-
+<svelte:window bind:scrollY="{y}" />
 <!-- sections -->
+<!-- <div style="transform: translate(0, {-y * speed}px)"> -->
 <section class="h-screen">
 	<Home />
 </section>
-<section class="bg-primary-900 bg-opacity-70 text-primary-100" id="about">
+<section class="bg-surface-900 text-primary-100" id="about">
 	<About />
 </section>
 <section id="work">
@@ -29,12 +23,16 @@
 	<Contact />
 </section>
 
+<!-- </div> -->
 <style lang="postcss">
 	.beach {
 		filter: drop-shadow(-4px -8px 8px rgba(3, 3, 3, 0.25));
 	}
-	section:not(:first-of-type) {
-		@apply h-full pl-20 p-8 lg:p-20;
+	section {
+		@apply pl-20 p-8 lg:p-20 grid items-center justify-items-center content-center;
 		scroll-snap-align: center;
+	}
+	section:not(:first-of-type) {
+		@apply h-full w-full;
 	}
 </style>
