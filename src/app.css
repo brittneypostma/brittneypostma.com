@@ -34,7 +34,7 @@ body {
 }
 
 .btn {
-	@apply px-8 py-4 rounded-lg bg-primary-400 text-white font-sans font-bold;
+	@apply px-8 py-4 rounded-lg bg-primary-400 text-white font-sans font-bold transition-colors border-2 border-transparent hover:bg-surface-900 hover:border-tertiary-400;
 }
 /* background: radial-gradient(ellipse at top, #e66465, transparent),
 	radial-gradient(ellipse at bottom, #4d9f0c, transparent); */
