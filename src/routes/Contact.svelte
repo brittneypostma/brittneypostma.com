@@ -114,10 +114,6 @@
 		color: rbg(var(--color-primary-200)) !important;
 	}
 
-	#first-name {
-		grid-column: 1/1;
-	}
-
 	input[type='text'],
 	input[type='email'],
 	textarea {
@@ -149,10 +145,6 @@
 		resize: vertical;
 		margin: 0;
 		vertical-align: top;
-	}
-
-	#submit {
-		grid-column: 1/-1;
 	}
 
 	@keyframes open-flap {

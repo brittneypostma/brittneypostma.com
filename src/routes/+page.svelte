@@ -25,9 +25,6 @@
 
 <!-- </div> -->
 <style lang="postcss">
-	.beach {
-		filter: drop-shadow(-4px -8px 8px rgba(3, 3, 3, 0.25));
-	}
 	section {
 		@apply pl-20 p-8 lg:p-20 grid items-center justify-items-center content-center;
 		scroll-snap-align: center;
