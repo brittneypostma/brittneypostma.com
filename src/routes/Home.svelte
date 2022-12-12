@@ -4,6 +4,7 @@
 	import { changingTitles } from '$lib/data/description'
 
 	let idx = 0
+	let width = 0
 
 	onMount(() => {
 		setInterval(() => {
@@ -18,6 +19,8 @@
 	import Border from '$lib/components/Border.svelte'
 </script>
 
+<svelte:window bind:innerWidth="{width}" />
+
 <div class="w-auto relative top-40">
 	<img
 		src="{Brittney}"
@@ -25,10 +28,10 @@
 		class="w-1/2 mx-auto absolute -top-36 right-0 lg:w-3/4 lg:-top-60" />
 	<div class="border-2 border-accent-400 p-4 h-52 relative top-12"></div>
 	<div class="relative -top-52 p-4 grid gap-6">
-		<Border>
+		<Border width="{width < 768 ? 200 : 350}">
 			<h1 class="relative top-12 -mb-2">Brittney Postma</h1>
 		</Border>
-		<h2 class="font-sans text-2xl">
+		<h2 class="font-sans text-2xl whitespace-nowrap">
 			I am a <span class="bg-accent-400 bg-opacity-50 px-2">{changingTitles[idx]}</span>.
 		</h2>
 		<section class="flex gap-6 sm:justify-between mt-4 text-primary-400">
@@ -36,3 +39,11 @@
 		</section>
 	</div>
 </div>
+
+<style lang="postcss">
+	@media (max-height: 600px) {
+		img {
+			display: none;
+		}
+	}
+</style>

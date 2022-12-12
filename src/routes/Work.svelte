@@ -55,10 +55,10 @@
 		place-items: center;
 	}
 	.bubble > p {
-		@apply text-surface-900 max-w-['300px'] text-center font-normal text-lg;
+		@apply text-surface-900 max-w-['300px'] text-center font-normal text-sm mt-6 md:mt-0 md:text-lg;
 	}
 	.bubble {
-		@apply gap-2 border-b-0 text-surface-900 after:hover:w-0 hover:text-surface-900;
+		@apply px-8 border-b-0 text-surface-900 after:hover:w-0 hover:text-surface-900 w-[220px] h-[220px] md:w-[350px] md:h-[350px];
 		background: radial-gradient(rgba(255, 255, 255, 0.401), rgb(255 255 255 / 0.5));
 		z-index: 10;
 		position: relative;
@@ -66,8 +66,6 @@
 		place-items: center;
 		place-content: center;
 		border-radius: 100%;
-		width: 350px;
-		height: 350px;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
 		border-radius: 50%;
@@ -81,7 +79,7 @@
 		transform: scale(1.1);
 	}
 	.title {
-		@apply text-3xl;
+		@apply hidden md:block text-xl md:text-3xl;
 		text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 	}
 	.logos {
@@ -91,8 +89,5 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		filter: drop-shadow(-4px 8px 0.15rem rgba(0, 0, 0, 0.25));
-	}
-	.text {
-		padding: 0 2rem;
 	}
 </style>

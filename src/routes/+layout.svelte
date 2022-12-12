@@ -20,7 +20,7 @@
 	<slot />
 </main>
 <!-- parallax -->
-<div class="fixed w-full z-40 bottom-0">
+<div class="bg-wrapper hidden md:block fixed w-full z-40 bottom-0">
 	<Waves />
 	<div class="beach fixed bottom-0 right-0 text-accent-900 pointer-events-none">
 		<Beach height="{'40vh'}" />
@@ -33,5 +33,11 @@
 	}
 	.beach {
 		filter: drop-shadow(-4px -8px 8px rgba(3, 3, 3, 0.25));
+	}
+
+	@media (max-height: 800px) {
+		.bg-wrapper {
+			display: none;
+		}
 	}
 </style>

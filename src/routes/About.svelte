@@ -29,10 +29,10 @@
 		<section class="overflow-y-auto text-2xl">
 			{#if selected}
 				<h3 class="font-sans text-3xl mb-4">{subtitle.toUpperCase()}</h3>
-				<p>{selected}</p>
+				{@html selected}
 			{:else}
 				<h3 class="font-sans text-3xl mb-4">{list[0].title.toUpperCase()}</h3>
-				<p>{list[0].text}</p>
+				{@html list[0].text}
 			{/if}
 		</section>
 	</section>

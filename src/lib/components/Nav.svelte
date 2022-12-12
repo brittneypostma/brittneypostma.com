@@ -18,7 +18,7 @@
 			<Links topNav bind:open="{menu}" />
 		</nav>
 	{:else if outerWidth > 1024}
-		<nav class="hidden lg:flex gap-4">
+		<nav class="hidden lg:flex gap-4 pr-4">
 			<Links topNav />
 		</nav>
 	{/if}

@@ -25,7 +25,7 @@
 <!-- </div> -->
 <style lang="postcss">
 	section {
-		@apply pl-20 p-8 lg:p-20 grid items-center justify-items-center content-center;
+		@apply pl-20 py-8 pr-2 lg:p-20 grid items-center justify-items-center content-center;
 		scroll-snap-align: center;
 	}
 	section:not(:first-of-type) {

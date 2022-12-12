@@ -7,6 +7,15 @@
 	scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
 	scroll-behavior: smooth;
 }
+
+.no-scrollbar {
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	width: 0 !important;
+}
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
 	width: 15px;
@@ -26,11 +35,11 @@
 html,
 body,
 #svelte {
-	@apply w-full h-full;
+	@apply w-full h-full overflow-x-hidden;
 }
 
 body {
-	@apply bg-surface-900 font-sans text-white text-lg md:text-xl;
+	@apply bg-surface-900 font-sans text-white text-lg md:text-xl mr-[17px];
 }
 
 .btn {
@@ -68,7 +77,7 @@ h2 {
 }
 
 a {
-	@apply whitespace-nowrap text-primary-400 border-b-1 border-transparent hover:text-tertiary-400 transition-all;
+	@apply whitespace-nowrap text-primary-400 border-b-1 border-transparent hover:text-tertiary-400 transition-all inline-block;
 }
 
 a:after {
