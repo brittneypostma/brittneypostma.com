@@ -4,7 +4,7 @@
 </script>
 
 {#if topNav}
-	<a href="/" class="text-inherit" on:click="{() => (open = !open)}">home</a>
+	<a href="#home" class="text-inherit" on:click="{() => (open = !open)}">home</a>
 {/if}
 <a href="#about" class="text-inherit" on:click="{() => (open = !open)}"> about </a>
 

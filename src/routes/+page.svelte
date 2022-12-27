@@ -9,7 +9,7 @@
 <svelte:window bind:scrollY="{y}" />
 <!-- sections -->
 <!-- <div style="transform: translate(0, {-y * speed}px)"> -->
-<section class="h-screen">
+<section class="h-screen" id="home">
 	<Home />
 </section>
 <section class="bg-surface-900 text-primary-100" id="about">
