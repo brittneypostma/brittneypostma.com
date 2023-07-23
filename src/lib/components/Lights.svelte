@@ -136,9 +136,9 @@
 		background-image: linear-gradient(
 			90deg,
 			transparent,
-			rgb(var(--color-primary-400)) 25%,
+			rgb(var(--color-primary-500)) 25%,
 			transparent,
-			rgb(var(--color-warning-600)) 70%,
+			rgb(var(--color-tertiary-200)) 70%,
 			transparent,
 			rgb(var(--color-accent-400)) 5%,
 			transparent
@@ -147,7 +147,7 @@
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		transform: translate(var(--left), var(--up)) scale(1);
-		animation: shift calc(var(--duration, 5) * 10s) calc(var(--delay, 0) * -10s) infinite ease;
+		animation: shift calc(var(--duration, 5) * 2s) calc(var(--delay, 0) * -2s) infinite ease;
 	}
 	@media (max-width: 768px) {
 		.light {

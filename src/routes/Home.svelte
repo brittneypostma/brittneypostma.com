@@ -21,7 +21,7 @@
 
 <svelte:window bind:innerWidth="{width}" />
 
-<div class="w-auto relative top-40">
+<div class="absolute right-0 top-1/2">
 	<img
 		src="{Brittney}"
 		alt="Brittney Postma"
