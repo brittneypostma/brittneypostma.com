@@ -51,7 +51,7 @@
 
 <style lang="postcss">
 	.container {
-    @apply grid justify-items-center gap-8;
+    @apply grid justify-items-center gap-16 mx-auto mt-16 md:mt-32;
 	}
 
 	.envelope {

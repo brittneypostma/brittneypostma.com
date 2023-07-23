@@ -3,47 +3,47 @@
 @tailwind utilities;
 
 * {
-	scrollbar-width: thin;
-	scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
-	scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--color-surface-400)) rgb(var(--color-primary-400));
+  scroll-behavior: smooth;
 }
 
 .no-scrollbar {
-	overflow: -moz-scrollbars-none;
-	-ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-	width: 0 !important;
+  width: 0 !important;
 }
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-	width: 15px;
+  width: 15px;
 }
 
 *::-webkit-scrollbar-track {
-	background: rgb(var(--color-surface-400));
-	border-radius: 5px;
+  background: rgb(var(--color-surface-400));
+  border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: rgb(var(--color-primary-400));
-	border-radius: 14px;
-	border: 3px solid rgb(var(--color-surface-400));
+  background-color: rgb(var(--color-primary-400));
+  border-radius: 14px;
+  border: 3px solid rgb(var(--color-surface-400));
 }
 
 html,
 body,
 #svelte {
-	@apply w-full h-full overflow-x-hidden;
+  @apply h-full w-full overflow-x-hidden;
 }
 
 body {
-	@apply bg-surface-900 font-sans text-white text-lg md:text-xl mr-[17px];
+  @apply mr-[17px] bg-surface-900 font-sans text-lg text-white md:text-xl;
 }
 
 .btn {
-	@apply px-8 py-4 rounded-lg bg-primary-400 text-primary-900 font-sans font-bold transition-colors border-2 border-transparent hover:bg-primary-300 hover:text-primary-900 hover:border-tertiary-400;
+  @apply rounded-lg border-2 border-transparent bg-primary-400 px-8 py-4 font-sans font-bold text-primary-900 transition-colors hover:border-tertiary-400 hover:bg-primary-300 hover:text-primary-900;
 }
 /* background: radial-gradient(ellipse at top, #e66465, transparent),
 	radial-gradient(ellipse at bottom, #4d9f0c, transparent); */
@@ -52,7 +52,7 @@ body {
 		radial-gradient(ellipse at bottom, rgb(var(--color-surface-900)), transparent 90%); */
 
 #svelte {
-	position: relative;
+  position: relative;
 }
 
 h1,
@@ -61,45 +61,45 @@ h3,
 h4,
 h5,
 h6 {
-	@apply font-heading;
+  @apply font-heading;
 }
 
 h1 {
-	@apply text-5xl mb-8;
+  @apply mb-8 text-5xl;
 }
 
 h2 {
-	@apply text-3xl lg:text-5xl;
+  @apply text-3xl md:text-4xl lg:text-5xl;
 }
 
 a {
-	@apply whitespace-nowrap text-primary-400 border-b-1 border-transparent hover:text-tertiary-400 transition-all inline-block;
+  @apply inline-block whitespace-nowrap border-b-1 border-transparent text-primary-400 transition-all hover:text-tertiary-400;
 }
 
 a:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 2px;
-	width: 0;
-	background: transparent;
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  background: transparent;
 }
 
 a:hover:after {
-	@apply bg-primary-400;
-	width: 100%;
-	transition:
-		width 0.5s ease,
-		background-color 0.5s ease;
+  @apply bg-primary-400;
+  width: 100%;
+  transition:
+    width 0.5s ease,
+    background-color 0.5s ease;
 }
 
 article {
-	max-width: 80ch;
-	margin-inline: auto;
+  max-width: 80ch;
+  margin-inline: auto;
 }
 
 p {
-	@apply break-words whitespace-normal;
+  @apply whitespace-normal break-words;
 }
 
 /* pink and blues lights */

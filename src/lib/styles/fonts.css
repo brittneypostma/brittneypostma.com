@@ -1,32 +1,32 @@
 @font-face {
-	font-family: 'Victor Mono';
-	font-style: normal;
-	font-weight: 400;
-	src: url('./fonts/VictorMono-Regular.woff2') format('woff2');
+  font-family: "Victor Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/VictorMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'Poppins-Light';
-	font-style: normal;
-	font-weight: 100;
-	src: url('./fonts/Poppins-Light.woff2') format('woff2');
+  font-family: "Poppins-Light";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./fonts/Poppins-Light.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'Poppins-Regular';
-	font-style: normal;
-	font-weight: 400;
-	src: url('./fonts/Poppins-Regular.woff2') format('woff2');
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Poppins-Regular.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'Poppins-Black';
-	font-style: normal;
-	font-weight: 900;
-	src: url('./fonts/Poppins-Black.woff2') format('woff2');
+  font-family: "Poppins-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/Poppins-Black.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: 'Pacifico';
-	src: url('./fonts/pacifico.woff2') format('woff2');
+  font-family: "Pacifico";
+  src: url("./fonts/pacifico.woff2") format("woff2");
 }
