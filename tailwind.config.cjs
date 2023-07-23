@@ -1,13 +1,9 @@
 const config = {
-  content: [
-    "./src/**/*.{html,js,svelte,ts}"
-  ],
-  darkMode: 'class',
+  content: ["./src/**/*.{html,js,svelte,ts}"],
+  darkMode: "class",
 
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-  presets: [require('./tailwind.theme.cjs')]
-}
+  plugins: [require("@tailwindcss/typography")],
+  presets: [require("./tailwind.theme.cjs")],
+};
 
-module.exports = config
+module.exports = config;

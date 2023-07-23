@@ -6,7 +6,7 @@
 	import codingCat from '$lib/images/work/coding-cat-logo.png'
 </script>
 
-<h2 class="mt-4">My Work</h2>
+<h2 class="mt-8 md:mt-16 mb-20 lg:mb-32 text-center">My Work</h2>
 <div class="container">
 	<a href="https://sveltesirens.dev" class="bubble">
 		<img src="{sirens}" alt="Svelte Sirens logo" class="logos" />
@@ -47,7 +47,7 @@
 
 <style lang="postcss">
 	.container {
-		margin: 8rem auto;
+		margin-inline: auto;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 4rem;

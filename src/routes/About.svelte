@@ -13,14 +13,14 @@
 	}
 </script>
 
-<article class="grid gap-6 mt-4">
+<article class="grid gap-6 mt-4 py-8">
 	<h2 class="text-white">About Me</h2>
 	<section class="grid gap-8 lg:h-[50vh] content-start items-start ">
 		<nav class="grid bg-primary-900 md:grid-cols-5">
 			{#each list as { title, text }}
 				<button
 					on:click="{event => updateSelected(event, title, text)}"
-					class="p-2 lg:px-8 lg:py-4 font-bold border-2 border-primary-400  transition-colors hover:bg-surface-900 hover:border-tertiary-400"
+					class="p-2 lg:px-8 lg:py-4 font-bold border-2 border-primary-400  transition-colors hover:border-tertiary-400"
 					class:selected="{title === subtitle}"
 					>{title.toUpperCase()}
 				</button>
@@ -40,6 +40,6 @@
 
 <style lang="postcss">
 	.selected {
-		@apply bg-primary-400 text-accent-900 hover:text-white border-accent-400;
+		@apply bg-primary-400 text-accent-900 border-accent-400;
 	}
 </style>

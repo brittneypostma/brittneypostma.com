@@ -9,9 +9,10 @@
 <svelte:window bind:scrollY="{y}" />
 <!-- sections -->
 <!-- <div style="transform: translate(0, {-y * speed}px)"> -->
-<section class="h-screen" id="home">
+<section class="h-screen w-full relative" id="home">
 	<Home />
 </section>
+
 <section class="bg-surface-900 text-primary-100" id="about">
 	<About />
 </section>
@@ -22,13 +23,8 @@
 	<Contact />
 </section>
 
-<!-- </div> -->
 <style lang="postcss">
-	section {
-		@apply pl-20 py-8 pr-2 lg:p-20 grid items-center justify-items-center content-center;
-		scroll-snap-align: center;
-	}
-	section:not(:first-of-type) {
-		@apply h-full w-full;
-	}
+  section {
+    @apply pl-20 pr-4 max:pr-0 mb-8;
+  }
 </style>

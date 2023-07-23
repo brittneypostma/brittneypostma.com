@@ -1,5 +1,6 @@
-<h2 class="text-center my-12">Contact Me</h2>
-<div class="container pb-96">
+
+<div class="container lg:pb-96">
+  <h2 class="text-center">Contact Me</h2>
 	<div id="envelope" class="envelope">
 		<svg
 			id="flap"
@@ -12,7 +13,7 @@
 		</svg>
 
 		<form
-			class="form text-white py-10"
+			class="form text-white"
 			name="contact"
 			method="POST"
 			action="/#contact"
@@ -50,11 +51,7 @@
 
 <style lang="postcss">
 	.container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 75%;
-		margin: 0 auto;
+    @apply grid justify-items-center gap-16 mx-auto mt-16 md:mt-32;
 	}
 
 	.envelope {
@@ -161,21 +158,15 @@
 		}
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 1024px) {
 		.envelope {
 			width: 100%;
 		}
 	}
 
-	@media only screen and (min-width: 601px) and (max-width: 1000px) {
+	@media only screen and (min-width: 1024px) {
 		.envelope {
-			width: 75%;
-		}
-	}
-
-	@media only screen and (min-width: 1001px) {
-		.envelope {
-			width: 80%;
+			width: 70%;
 		}
 	}
 </style>
