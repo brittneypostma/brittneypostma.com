@@ -138,7 +138,7 @@
 			transparent,
 			rgb(var(--color-primary-500)) 25%,
 			transparent,
-			rgb(var(--color-tertiary-200)) 70%,
+			rgb(var(--color-warning-200)) 70%,
 			transparent,
 			rgb(var(--color-accent-400)) 5%,
 			transparent
@@ -147,7 +147,7 @@
 		background-position: center bottom;
 		background-repeat: no-repeat;
 		transform: translate(var(--left), var(--up)) scale(1);
-		animation: shift calc(var(--duration, 5) * 2s) calc(var(--delay, 0) * -2s) infinite ease;
+		animation: shift calc(var(--duration, 5) * 5s) calc(var(--delay, 0) * -5s) infinite ease;
 	}
 	@media (max-width: 768px) {
 		.light {

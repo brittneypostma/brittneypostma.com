@@ -13,7 +13,7 @@
 	}
 </script>
 
-<article class="grid gap-6 mt-4">
+<article class="grid gap-6 mt-4 py-8">
 	<h2 class="text-white">About Me</h2>
 	<section class="grid gap-8 lg:h-[50vh] content-start items-start ">
 		<nav class="grid bg-primary-900 md:grid-cols-5">
