@@ -15,22 +15,6 @@
 			I am the founder of the Svelte Sirens, a Svelte Society for women and non-binary people.
 		</p>
 	</a>
-	<a href="https://codingcat.dev" class="bubble">
-		<img src="{codingCat}" alt="CodingCat.dev logo" class="logos" />
-		<h3 class="title">Coding Cat</h3>
-		<p class="text">
-			I built a design system and then implemented it in a Next.js app with TailwindCSS for
-			CodingCat.dev. I now am a teacher and co-host the podcast.
-		</p>
-	</a>
-	<a href="https://www.theconsolelogs.com" class="bubble">
-		<img src="{logs}" alt="The Console Logs logo" class="logos" />
-		<h3 class="title">The Console Logs</h3>
-		<p class="text">
-			I write notes on a number of development topics at The Console Logs. Read up on topics from
-			html to advanced javascript and react.
-		</p>
-	</a>
 	<a href="https://academy.zerotomastery.io/courses/?affcode=441520_gjue7n-1" class="bubble">
 		<img src="{ztm}" alt="ZTM Academy" class="logos" />
 		<h3 class="title">ZTM Academy</h3>
@@ -74,6 +58,8 @@
 		-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
 		box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
 		transition: all 400ms cubic-bezier(0.47, 2.64, 0.41, 0.8);
+    display: grid;
+    gap: 1rem;
 	}
 	.bubble:hover {
 		transform: scale(1.1);
