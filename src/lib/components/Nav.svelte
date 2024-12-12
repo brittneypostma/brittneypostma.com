@@ -13,7 +13,7 @@
 
 	{#if menu}
 		<nav
-			transition:slide="{{ duration: 500, y: -1000 }}"
+			transition:slide|global="{{ duration: 500, y: -1000 }}"
 			class="bg-primary-700 absolute right-0 grid gap-2 justify-center content-center rounded-lg p-4 mobile-menu text-white">
 			<Links topNav bind:open="{menu}" />
 		</nav>
