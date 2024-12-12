@@ -11,7 +11,7 @@
 
 <aside class="overflow-hidden w-10 py-[100px] h-[100vmax] left-0 absolute z-50">
 	<div
-		class="no-scrollbar wrapper fixed px-4 overflow-y-scroll box-content h-[100vmax] md:top-1/4 w-10">
+		class="no-scrollbar wrapper fixed px-4 overflow-y-auto box-content h-[100vmax] md:top-1/4 w-10">
 		<a href="https://twitter.com/BrittneyPostma" rel="noopener noreferrer" target="_blank">
 			<img src="{twitter}" alt="opens Brittney Postma's twitter page in new tab" />
 		</a>

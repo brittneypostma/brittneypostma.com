@@ -13,7 +13,7 @@
 	<Home />
 </section>
 
-<section class="bg-surface-900 text-primary-100" id="about">
+<section class="bg-surface-900 text-primary-100 h-full" id="about">
 	<About />
 </section>
 <section id="work">

@@ -13,9 +13,9 @@
 	}
 </script>
 
-<article class="grid gap-6 mt-4 py-8">
-	<h2 class="text-white">About Me</h2>
-	<section class="grid gap-8 lg:h-[50vh] content-start items-start ">
+<article class="grid gap-6 p-8 h-full">
+  <section class="grid gap-8 h-full content-start items-start">
+    <h2 class="text-white">About Me</h2>
 		<nav class="grid bg-primary-900 md:grid-cols-5">
 			{#each list as { title, text }}
 				<button

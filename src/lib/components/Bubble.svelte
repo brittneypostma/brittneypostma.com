@@ -9,7 +9,7 @@
 <a
     href={url}
     class="bubble"
-    transition:fly="{{
+    transition:fly|global="{{
       duration: 1000,
       delay: 800,
       easing: quintOut,
