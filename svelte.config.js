@@ -1,4 +1,4 @@
-import { vitePreprocess } from "@sveltejs/kit/vite";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 /* https://kit.svelte.dev/docs#configuration */
 import adapter from "@sveltejs/adapter-netlify";
 

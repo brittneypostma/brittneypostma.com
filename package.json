@@ -12,8 +12,9 @@
   },
   "devDependencies": {
     "@skeletonlabs/skeleton": "^0.76.3",
-    "@sveltejs/adapter-netlify": "2.0.8",
-    "@sveltejs/kit": "^1.22.3",
+    "@sveltejs/adapter-netlify": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.45.0",
@@ -30,7 +31,7 @@
     "tailwindcss": "^3.3.3",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6",
-    "vite": "^4.4.6"
+    "vite": "^5.0.0"
   },
   "type": "module",
   "packageManager": "pnpm@9.12.0+sha256.a61b67ff6cc97af864564f4442556c22a04f2e5a7714fbee76a1011361d9b726"
