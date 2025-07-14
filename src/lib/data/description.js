@@ -12,7 +12,7 @@ export const list = [
     <h4 class="font-sans text-2xl">Experience<h4>
     <ul class="font-sans pl-2">
     <li>✅ Advised two years for Google's hackathon as a Svelte expert.</li>
-    <li>✅ At Provi, I built an entirely new design system to replace an old one in Svelte and React with a fully customizede TailwindCSS token system.</li>
+    <li>✅ At Provi, I built an entirely new design system to replace an old one in Svelte and React with a fully customized TailwindCSS token system.</li>
     <li>✅ I lead a workshop for the <a href="https://academy.zerotomastery.io/courses/?affcode=441520_gjue7n-1">Zero to Mastery Academy</a></li>
     <li>✅ At <a href="https://www.grainger.com/">Grainger</a> building out their design system in Svelte and then transitioning it to React.</li>
     <li>✅ At <a href="https://www.netlify.com/">Netlify</a> as a Developer Experience Engineer where I worked closely with the Development Workflow Pillar in the developer experience of products while maintaining my presence in the community at conferences and online.</li>
