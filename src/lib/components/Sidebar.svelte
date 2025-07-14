@@ -1,19 +1,18 @@
 <script>
-	import twitter from '$lib/images/twitter.png'
+	import bluesky from '$lib/images/bluesky.png'
 	import linkedin from '$lib/images/linkedin.png'
 	import github from '$lib/images/github.png'
 	import dev from '$lib/images/dev.png'
 	import youtube from '$lib/images/youtube.png'
 	import sirens from '$lib/images/sirens.png'
-	import codingCat from '$lib/images/coding-cat.png'
 	import logs from '$lib/images/logs.png'
 </script>
 
-<aside class="overflow-hidden w-10 py-[100px] h-[100vmax] left-0 absolute z-50">
+<aside class="left-0 z-50 absolute py-[100px] w-10 h-[100vmax] overflow-hidden">
 	<div
-		class="no-scrollbar wrapper fixed px-4 overflow-y-auto box-content h-[100vmax] md:top-1/4 w-10">
-		<a href="https://twitter.com/BrittneyPostma" rel="noopener noreferrer" target="_blank">
-			<img src="{twitter}" alt="opens Brittney Postma's twitter page in new tab" />
+		class="md:top-1/4 box-content fixed px-4 w-10 h-[100vmax] overflow-y-auto no-scrollbar wrapper">
+		<a href="https://bsky.app/profile/brittneypostma.bsky.social" rel="noopener noreferrer" target="_blank">
+			<img src="{bluesky}" alt="opens Brittney Postma's bluesky page in new tab" />
 		</a>
 		<a
 			href="https://www.linkedin.com/in/brittney-postma-868928178/"
@@ -33,9 +32,6 @@
 		<a href="https://sveltesirens.dev" rel="noopener noreferrer" target="_blank">
 			<img src="{sirens}" alt="opens sveltesirens.dev site in new tab" />
 		</a>
-		<a href="https://codingcat.dev/" rel="noreferrer" target="_blank">
-			<img src="{codingCat}" alt="opens codingcat.dev site in new tab" />
-		</a>
 		<a href="https://theconsolelogs.com/" rel="noreferrer" target="_blank">
 			<img src="{logs}" alt="opens theconsolelogs.com site in new tab" />
 		</a>
@@ -54,7 +50,7 @@
 	}
 
 	.wrapper > * + * {
-		@apply mt-4 block;
+		@apply block mt-4;
 	}
 	@media (max-height: 600px) {
 		.wrapper {
