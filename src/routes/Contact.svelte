@@ -1,5 +1,5 @@
 
-<div class="container lg:pb-96">
+<div class="lg:pb-96 container">
   <h2 class="text-center">Contact Me</h2>
 	<div id="envelope" class="envelope">
 		<svg
@@ -13,7 +13,7 @@
 		</svg>
 
 		<form
-			class="form text-white"
+			class="text-white form"
 			name="contact"
 			method="POST"
 			action="/#contact"
@@ -33,7 +33,7 @@
 					class="text"
 					type="email"
 					name="email"
-					placeholder="brittney@codingcat.dev"
+					placeholder="bdesignedwebdev@gmail.com"
 					required />
 			</label>
 			<label for="subject" id="subject">
@@ -51,7 +51,7 @@
 
 <style lang="postcss">
 	.container {
-    @apply grid justify-items-center gap-16 mx-auto mt-16 md:mt-32;
+    @apply justify-items-center gap-16 grid mx-auto mt-16 md:mt-32;
 	}
 
 	.envelope {
@@ -98,7 +98,7 @@
 	[placeholder],
 	*[placeholder],
 	textarea[placeholder] {
-		@apply text-primary-200 font-thin;
+		@apply font-thin text-primary-200;
 	}
 
 	::-webkit-input-placeholder {
